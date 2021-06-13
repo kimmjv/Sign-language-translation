@@ -1,0 +1,62 @@
+<html>
+<title>모두의 수어</title>
+<link rel="stylesheet" href="test.css">
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<link
+href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
+rel="stylesheet"/>
+<script
+    src="https://kit.fontawesome.com/4739a179a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<body>  
+<main>
+    <section class="glass">
+      <div class="dashborad">
+        <h2>손이 잘 보이도록 가까이서 수화해주세요</h2>
+        <div class="webcam-container" id="cam"></div>
+      </div>
+
+      <div class="right_board">
+        <div class="name">모두의 수어</div>
+        <div id="label-container"></div>
+        <div id="btn">
+          <i class="fas fa-redo" id="btn-del" onclick="btndel()"></i>
+
+          <div id="tts">
+            <select id="select-lang">
+              <option value="ko-KR">한국어</option>
+              <option value="en-EN">영어</option>
+              <option value="jp-JP">일본어</option>
+              </select>
+            <i class="fas fa-volume-up" id="btn-read"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./logo.png" height="80px" style="border-radius: 8px;">
+            <div class="card_info">
+              <h2>AI 판단 확률</h2>
+              <p>머신러닝 신뢰성 지표입니다. (숫자가 높을 수록 정확함)</p>
+              <!--<div class="progress"></div>-->
+              <div class="bar-holder">
+                <div id="bar-value">수어</div>
+              </div>
+              <span class="gauge"  per="95"></span>
+            </div>
+            <h2 id="percentage">90%</h2>
+        </div>
+
+
+      </div>
+    </section>
+</main>
+<!--
+<div class="circle1"></div>
+<div class="circle2"></div>
+-->
+</body>
+<script type="text/javascript" src="./test.js"></script>
+</html>

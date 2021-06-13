@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+p,
+h2 {
+  color: #333333;
+}
+
+/* 배경 */
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #75d8aa, #c0e073);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 5%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 5%;
+}
+
+/* 왼쪽 컨테이너 - 캠 */
+.dashborad {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+
+.webcam-container {
+  width: 600px;
+  border-radius: 2rem;
+}
+
+
+.cam {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+/* 오른쪽 컨테이너 - 라벨, 신뢰성 */
+
+.right_board {
+  margin: 2rem 5rem;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.name {
+  text-align: center;
+  font-family: "ELAND_Nice_M";
+  color: #333333;
+  font-size: 36px;
+}
+
+#label-container {
+  align-items: center;
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  width: 100%;
+  height: 60%;
+  box-shadow: 6px 6px 16px rgba(122, 122, 122, 0.3);
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+#btn {
+  display: flex;
+  justify-content:space-between
+}
+
+#btn-del {
+  margin-top: 16px;
+  font-size: 26px;
+  margin-right: 12px;
+  color: #424141;
+}
+
+#tts {
+  margin-top: 16px;
+  align-items: center;
+  font-size: 26px;
+  color: #424141;
+}
+
+#select-lang {
+  width: 60%;
+  font-size: 20px;
+  margin-right: 1rem;
+  color: #424141;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 16px rgba(122, 122, 122, 0.3);
+  justify-content: space-between;
+}
+
+.bar-holder {
+  width: 100%;
+  background: rgb(236, 236, 236);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 0 auto;
+}
+
+#bar-value {
+  width: 100%;
+  color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+  background: linear-gradient(to right top, #75d8aa, #c0e073);
+}
+/*
+.progress {
+  background: linear-gradient(to right top, #75d8aa, #c0e073);
+  width: 150%;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 80%;
+}
+
+*/
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#percentage {
+  font-weight: bold;
+  background: linear-gradient(to right top, #5aa884, #8fa854);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+@font-face {
+  font-family: "ELAND_Nice_M";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
